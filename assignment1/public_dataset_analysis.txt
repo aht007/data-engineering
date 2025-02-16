@@ -1,0 +1,119 @@
+Dataset Info:
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 1297725 entries, 0 to 1297724
+Data columns (total 34 columns):
+ #   Column                                                           Non-Null Count    Dtype  
+---  ------                                                           --------------    -----  
+ 0   Clean Alternative Fuel Vehicle Type                              1297725 non-null  object 
+ 1   VIN (1-10)                                                       1297725 non-null  object 
+ 2   DOL Vehicle ID                                                   1297725 non-null  int64  
+ 3   Model Year                                                       1297725 non-null  int64  
+ 4   Make                                                             1297725 non-null  object 
+ 5   Model                                                            1297725 non-null  object 
+ 6   Primary Use                                                      1297725 non-null  object 
+ 7   Electric Range                                                   1297669 non-null  float64
+ 8   Odometer Reading                                                 1297725 non-null  int64  
+ 9   Odometer Reading Description                                     1297725 non-null  object 
+ 10  New or Used Vehicle                                              1297725 non-null  object 
+ 11  Sale Price                                                       1297725 non-null  int64  
+ 12  Sale Date                                                        361836 non-null   object 
+ 13  Base MSRP                                                        1297669 non-null  float64
+ 14  Transaction Type                                                 1297725 non-null  object 
+ 15  Transaction Date                                                 1297725 non-null  object 
+ 16  Year                                                             1297725 non-null  int64  
+ 17  County                                                           1297657 non-null  object 
+ 18  City                                                             1297602 non-null  object 
+ 19  State                                                            1297724 non-null  object 
+ 20  Postal Code                                                      1297633 non-null  float64
+ 21  2019 HB 2042: Clean Alternative Fuel Vehicle (CAFV) Eligibility  1297725 non-null  object 
+ 22  Meets 2019 HB 2042 Electric Range Requirement                    1297725 non-null  bool   
+ 23  Meets 2019 HB 2042 Sale Date Requirement                         1297725 non-null  bool   
+ 24  Meets 2019 HB 2042 Sale Price/Value Requirement                  1297725 non-null  bool   
+ 25  2019 HB 2042: Battery Range Requirement                          1297725 non-null  object 
+ 26  2019 HB 2042: Purchase Date Requirement                          1297725 non-null  object 
+ 27  2019 HB 2042: Sale Price/Value Requirement                       1297725 non-null  object 
+ 28  Electric Vehicle Fee Paid                                        1297725 non-null  object 
+ 29  Transportation Electrification Fee Paid                          1206687 non-null  object 
+ 30  Hybrid Vehicle Electrification Fee Paid                          1206687 non-null  object 
+ 31  2020 GEOID                                                       1297657 non-null  float64
+ 32  Legislative District                                             1293103 non-null  float64
+ 33  Electric Utility                                                 1297657 non-null  object 
+dtypes: bool(3), float64(5), int64(5), object(21)
+memory usage: 310.6+ MB
+None
+
+Summary Statistics:
+       DOL Vehicle ID    Model Year  Electric Range  Odometer Reading    Sale Price     Base MSRP          Year   Postal Code    2020 GEOID  Legislative District
+count    1.297725e+06  1.297725e+06    1.297669e+06      1.297725e+06  1.297725e+06  1.297669e+06  1.297725e+06  1.297633e+06  1.297657e+06          1.293103e+06
+mean     2.175458e+08  2.019258e+03    7.505039e+01      2.861494e+03  1.128322e+04  2.094344e+03  2.021488e+03  9.813055e+04  5.294119e+10          2.958287e+01
+std      8.884230e+07  3.689909e+00    9.398845e+01      1.239864e+04  3.065403e+04  1.177569e+04  2.797634e+00  2.893390e+03  1.955637e+09          1.482763e+01
+min      4.000000e+00  1.993000e+03    0.000000e+00      0.000000e+00  0.000000e+00  0.000000e+00  2.010000e+03  7.450000e+02  1.001020e+09          1.000000e+00
+25%      1.619312e+08  2.017000e+03    0.000000e+00      0.000000e+00  0.000000e+00  0.000000e+00  2.020000e+03  9.805200e+04  5.303301e+10          1.800000e+01
+50%      2.205317e+08  2.020000e+03    3.000000e+01      0.000000e+00  0.000000e+00  0.000000e+00  2.022000e+03  9.811900e+04  5.303303e+10          3.400000e+01
+75%      2.614500e+08  2.023000e+03    1.250000e+02      1.200000e+01  0.000000e+00  0.000000e+00  2.024000e+03  9.836800e+04  5.305307e+10          4.300000e+01
+max      4.792548e+08  2.025000e+03    3.370000e+02      9.626190e+05  1.231202e+07  8.450000e+05  2.025000e+03  9.990100e+04  7.212700e+10          4.900000e+01
+
+Missing Values:
+Electric Range                                 56
+Sale Date                                  935889
+Base MSRP                                      56
+County                                         68
+City                                          123
+State                                           1
+Postal Code                                    92
+Transportation Electrification Fee Paid     91038
+Hybrid Vehicle Electrification Fee Paid     91038
+2020 GEOID                                     68
+Legislative District                         4622
+Electric Utility                               68
+dtype: int64
+
+Unique values in 'Clean Alternative Fuel Vehicle Type': 3
+
+Unique values in 'VIN (1-10)': 14124
+
+Unique values in 'Make': 48
+
+Unique values in 'Model': 175
+
+Unique values in 'Primary Use': 12
+
+Unique values in 'Odometer Reading Description': 7
+
+Unique values in 'New or Used Vehicle': 2
+
+Unique values in 'Sale Date': 5044
+
+Unique values in 'Transaction Type': 7
+
+Unique values in 'Transaction Date': 4307
+
+Unique values in 'County': 396
+
+Unique values in 'City': 1382
+
+Unique values in 'State': 58
+
+Unique values in '2019 HB 2042: Clean Alternative Fuel Vehicle (CAFV) Eligibility': 2
+
+Unique values in '2019 HB 2042: Battery Range Requirement': 3
+
+Unique values in '2019 HB 2042: Purchase Date Requirement': 3
+
+Unique values in '2019 HB 2042: Sale Price/Value Requirement': 5
+
+Unique values in 'Electric Vehicle Fee Paid': 3
+
+Unique values in 'Transportation Electrification Fee Paid': 3
+
+Unique values in 'Hybrid Vehicle Electrification Fee Paid': 3
+
+Unique values in 'Electric Utility': 78
+
+First 5 rows of the dataset:
+      Clean Alternative Fuel Vehicle Type  VIN (1-10)  DOL Vehicle ID  ...    2020 GEOID Legislative District                                   Electric Utility
+0          Battery Electric Vehicle (BEV)  1N4BZ0CP3G       348273537  ...  5.303195e+10                 24.0  BONNEVILLE POWER ADMINISTRATION||PUGET SOUND E...
+1          Battery Electric Vehicle (BEV)  5YJ3E1EB7K       244708467  ...  5.303302e+10                 48.0      PUGET SOUND ENERGY INC||CITY OF TACOMA - (WA)
+2          Battery Electric Vehicle (BEV)  5YJ3E1EB7K       244708467  ...  5.303302e+10                 48.0      PUGET SOUND ENERGY INC||CITY OF TACOMA - (WA)
+3  Plug-in Hybrid Electric Vehicle (PHEV)  YV4H600A3P       227359303  ...  5.303303e+10                  5.0      PUGET SOUND ENERGY INC||CITY OF TACOMA - (WA)
+4  Plug-in Hybrid Electric Vehicle (PHEV)  YV4H600A3P       227359303  ...  5.303303e+10                  5.0      PUGET SOUND ENERGY INC||CITY OF TACOMA - (WA)
